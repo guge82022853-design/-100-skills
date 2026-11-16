@@ -1,0 +1,20 @@
+{
+  "name": "skill-lint",
+  "version": "0.1.0",
+  "description": "给 Agent Skills（SKILL.md）做体检的 CLI：检查 name/description 是否符合官方规范，以及技能会不会被模型真正选中。可查本地目录，也可直接查 GitHub 仓库。",
+  "type": "module",
+  "bin": { "skill-lint": "./skill-lint.mjs" },
+  "main": "./skill-lint.mjs",
+  "exports": { ".": "./skill-lint.mjs", "./package.json": "./package.json" },
+  "files": ["skill-lint.mjs", "_batch.mjs", "README.md", "LICENSE"],
+  "scripts": {
+    "lint": "node skill-lint.mjs",
+    "batch": "node _batch.mjs",
+    "demo:before": "node skill-lint.mjs examples/before",
+    "demo:after": "node skill-lint.mjs examples/after"
+  },
+  "engines": { "node": ">=18" },
+  "keywords": ["agent-skills", "skill-md", "claude", "claude-code", "lint", "cli", "ai-agent"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/<你的用户名>/skill-lint.git" }
+}
