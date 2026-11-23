@@ -1,4 +1,4 @@
-# Agent Skills 体检 · skill-lint
+# dsh—Agent Skills 体检 · skill-lint
 
 > 你装了 30 个 AI 技能，可能一半从没被调用过——因为它们没写"什么时候该用我"。
 
